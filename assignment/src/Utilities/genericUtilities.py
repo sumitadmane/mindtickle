@@ -48,3 +48,8 @@ def generate_phone_number():
     return mobile_number
 
 
+def category_pets():
+    lst = ['Dog', 'Cat', 'Rodent']
+    arr = round(random.randint(0, (len(lst)) - 1), 1)
+    pet_category = str(lst[arr])
+    return pet_category

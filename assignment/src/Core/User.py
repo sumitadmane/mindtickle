@@ -2,8 +2,6 @@ from assignment.src.helpers.users_helper import UserHelper
 from assignment.src.Utilities.genericUtilities import *
 import random
 
-
-
 class User(object):
 
     def __init__(self, **kwargs):

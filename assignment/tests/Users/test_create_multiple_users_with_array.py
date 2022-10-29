@@ -32,7 +32,7 @@ def test_create_multiple_users_with_array(no_of_users):
 @pytest.mark.parametrize("no_of_users",
                          [
                             (1),
-                            #(2)
+                            (2)
                          ])
 @pytest.mark.tcid02
 def test_update_user_with_username(no_of_users):
@@ -61,7 +61,7 @@ def test_update_user_with_username(no_of_users):
 @pytest.mark.parametrize("no_of_users",
                          [
                             (1),
-                            #(2)
+                            (2)
                          ])
 @pytest.mark.tcid03
 def test_get_user_info_with_username(no_of_users):
@@ -90,12 +90,8 @@ def test_get_user_info_with_username(no_of_users):
         user_get_info = user_helper.get_user_detais(user.username)
         assert user_get_info.status_code == 200
         user_info = user_get_info.json()
-        import pdb;pdb.set_trace()
-        # assert user_info['firstname'] == user.firstname
+
         assert user_info['username'] == user.username
-
-
-
 
 
 
